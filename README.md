@@ -5,6 +5,9 @@ The [suspendlock.service](./suspendlock.service) file can be used as an example 
 
 Source of the [example image](./backgrounds/example.png): Jan Zerfowski, Bolivia, Madidi National Park
 
+#### Example
+![suspendlock in action](readme_example_image.png "Example usage")
+
 ## What it can do
 - Display random image from folder
 - Check file endings and only display settings['filetypes']
