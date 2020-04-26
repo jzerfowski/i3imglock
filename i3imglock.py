@@ -1,13 +1,18 @@
 #! /usr/bin/python
+# -*- coding: utf-8 -*-
+
+__author__ = "Jan Zerfowski"
+__license__ = "GNU General Public License v3.0"
 
 import os
 import logging
 
-import numpy as np
 import subprocess
 import argparse
-import screeninfo
+
+import numpy as np
 from PIL import Image
+import screeninfo
 
 logging_levels = {'debug': logging.DEBUG, 'warning': logging.WARNING, 'error': logging.ERROR}
 images_directory_default = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'images/')
@@ -16,7 +21,7 @@ i3lock_options_default = "--show-failed-attempts"
 i3lock_fallback_command_default = "i3lock"
 
 parser = argparse.ArgumentParser(
-    description='i3imglock.py to call i3lock with custom images and options. Requires numpy, PIL and screeninfo')
+    description='i3imglock.py to call i3lock with custom images and options. Requires numpy, Pillow and screeninfo')
 
 parser.add_argument('--images_directory', type=str, default=images_directory_default, required=False,
                     help=f"Absolute directory to images which can be used for i3lock "
