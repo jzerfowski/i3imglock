@@ -17,9 +17,10 @@ All arguments can be shown by `i3imglock --help`
 - [PIL](https://pypi.org/project/Pillow/)
 - [screeninfo](https://pypi.org/project/screeninfo/)
 
-Source of the [example image](./images/example.jpg): Jan Zerfowski, Bolivia, Madidi National Park
 
-#### Example
+## Example usage
+Source of the [example image](./images/example.jpg): [Jan Zerfowski](www.janzerfowski.de), Bolivia, Madidi National Park
+
 ![i3imglock in action](images/example.jpg "Example usage")
 
 ## What it can do
