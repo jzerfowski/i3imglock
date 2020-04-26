@@ -3,7 +3,7 @@ Description=Execute /usr/local/bin/i3imglock on suspend
 Before=sleep.target
 
 [Service]
-User=jan
+User=<your username>
 Type=forking
 Environment=DISPLAY=:0
 ExecStart=/usr/local/bin/i3imglock
