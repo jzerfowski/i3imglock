@@ -22,7 +22,7 @@ You're using this at your own risk! I cannot be held responsible when you lock y
 
 
 ## Example usage
-Source of the [example image](./images/example.jpg): [Jan Zerfowski](www.janzerfowski.de), Bolivia, Madidi National Park
+Source of the [example image](./images/example.jpg): [Jan Zerfowski](https://janzerfowski.de), Bolivia, Madidi National Park
 
 ![i3imglock in action](images/example.jpg "Example usage")
 
