@@ -16,15 +16,16 @@ All arguments can be shown by `i3imglock --help`
 You're using this at your own risk! I cannot be held responsible when you lock yourself out, your computer explodes or anything else happens. 
 
 ## Requirements
+- [i3lock](https://github.com/i3/i3lock)
 - [NumPy](https://numpy.org/)
 - [Pillow](https://pypi.org/project/Pillow/)
 - [screeninfo](https://pypi.org/project/screeninfo/)
 
 
 ## Example usage
-Source of the [example image](./images/example.jpg): [Jan Zerfowski](https://janzerfowski.de), Bolivia, Madidi National Park
+Source of the [example image](readme_example_image.png): [Jan Zerfowski](https://janzerfowski.de), Bolivia, Madidi National Park
 
-![i3imglock in action](images/example.jpg "Example usage")
+![i3imglock in action](readme_example_image.png "Example usage")
 
 ## What it can do
 - Display random image from folder
@@ -38,7 +39,7 @@ Source of the [example image](./images/example.jpg): [Jan Zerfowski](https://jan
     - `chmod u+x i3imglock.py`
 - Create a symbolic link in your $PATH
     - `ln -s <directory of i3imglock.py>/i3imglock.py /usr/local/bin/i3imglock`
-- Copy the [i3imglock.service](./i3imglock.service) file to a folder which systemd cares about
+- Copy the [i3imglock.service](/i3imglock.service) file to a folder which systemd cares about
     - `cp i3imglock.service /etc/systemd/system/i3imglock.service`
 - Set your username in the User variable in the i3imglock.service file (otherwise the numpy import throws an error)
 - Enable the service
@@ -47,6 +48,7 @@ Source of the [example image](./images/example.jpg): [Jan Zerfowski](https://jan
     - `bindsym $mod+9 exec --no-startup-id i3imglock`
     - `exec --no-startup-id xautolock -time 10 -locker i3imglock`
 - The `$mod+0` keybinding executes i3exit. Change i3exit by replacing blurlock with a function that executes i3imglock
+    - A working version of i3exit can be found [here](/i3exit)
 - To apply custom settings, use the possible arguments 
     - `i3imglock.py -h` 
 
